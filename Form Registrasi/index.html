@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registrasi Berlangganan Internet</title>
+  <link rel="icon" type="image/x-icon" href="https://my.apjii.or.id/uploads/real/4513/logo_perusahaan1.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f15a24;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 100px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .judul {
+      font-size: 36px;
+      color: #333;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: black;
+    }
+
+    .product-card {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      background-color: #fefefe;
+    }
+
+    .product-image {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    select {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .header-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+      }
+
+      .judul {
+        font-size: 28px;
+      }
+
+      .product-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .product-image {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      .product-info {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-flex">
+      <img src="img/logo oas.jpeg" alt="Logo Perusahaan" class="logo" />
+      <h1 class="judul">Registrasi Berlangganan Internet</h1>
+    </div>
+
+    <h2>Paket Internet</h2>
+
+    <div class="product-card">
+      <img src="img/homeinternet.jpg" alt="Wilayah Ciampea" class="product-image" />
+      <div class="product-info">
+        <h3>Wilayah Ciampea, Leuwisadeng & Loji</h3>
+        <p>Paket internet ini sudah unlimited dan termasuk PPN 11%</p>
+        <label for="bandwidth">Pilih Bandwidth:</label>
+        <select id="bandwidth" name="bandwidth">
+          <option value="0">Pilih Bandwidth</option>
+          <option value="150000">Paket 7 Mbps</option>
+          <option value="220000">Paket 10 Mbps</option>
+          <option value="320000">Paket 20 Mbps</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
